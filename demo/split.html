@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="app">北京空气质量：<b>90</b></p>
+
+<script>
+    var a = document.getElementById('app');
+    var b = a.innerHTML.split("空气");//["北京", "质量：<b>90</b>"]
+    var c = a.innerHTML.split("",3);//["北", "京", "空"]
+/*split
+    stringObject.split(separator,howmany)
+    1,是字符串的一个方法，主要作用是将字符串转化成一个数组。
+    2,spearator：分隔符（分割之后不包括分割符），该值可以是字符串或者正则表达式;
+    3,howmany:限制数组返回的最大长度。
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>
+            yiyiyi<b>111</b></li>
+        <li>222<b>ererer</b></li>
+        <li>333<b>sansansan</b></li>
+    </ul>
+
+    <script>
+        var a =document.getElementById("ul");
+        var b = a.children;//返回一个数组：[li,li,li];
+        var c = a.children[0].innerHTML;//返回第一个元素，里面有值并不是返回数组;
+
+        var d = Number(c.children[1]);
+
+
+    </script>
+</body>
+</html>

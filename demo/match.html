@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="p">广州空气质量：<b>50</b></p>
+
+    <script>
+        var a = document.getElementById("p");
+        var b =a.innerHTML.match(/(.*?)空气/);
+//        返回一个数组，默认情况下只匹配一次,
+//        .表示任意字符，*表示匹配多个
+//        为什么要加？呢，不直接.*;?或+号表示惰性模式匹配，匹配到第一个就结束了，不加则表示无限匹配，直到结束；
+        var b = 3;
+//        var 可以重新定义变量。
+        alert(b);//3
+
+
+    </script>
+</body>
+</html>
